@@ -4,7 +4,7 @@ $(document).ready(function() {
         $submitTwitter  = $('button#submitTwitter');
 
     // alert on document ready
-    // alert('jQuery set: document ready occurred!');
+    alert('jQuery set: document ready occurred!');
 
     // focus $alias
     $alias.focus();
