@@ -31,10 +31,7 @@ Topic 1: Javascript Intro and jQuery (1 day)
 6. Write the response to a div element.
 7. Show div content in red when a server error occurs.
 8. Take some free air and then create a function to highlight your name in the server response content. Call it right after setting the response inside the div.
-9. AJAX: get the response from http://search.twitter.com/search.json (New version https://dev.twitter.com/docs/api/1/get/search) with parameter data "q=html5"
-
-First show response in firebug’s console log to analyze data, then display tweets inside a floated div in the middle of the screen.
-For each tweet show: from_user, text, created_at, profile_image_url.
+9. AJAX: get the response from http://search.twitter.com/search.json (New version https://dev.twitter.com/docs/api/1/get/search) with parameter data "q=html5". First show response in firebug’s console log to analyze data, then display tweets inside a floated div in the middle of the screen. For each tweet show: from_user, text, created_at, profile_image_url.
 10. Add a transparent background covering the whole screen behind the tweets div so the background gets dimmed.
 
 ### Key Points:
