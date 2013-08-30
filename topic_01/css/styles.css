@@ -4,6 +4,9 @@ body {
     width: 80%;
     color: #000000;
 }
+a {
+    color: #000000
+}
 div#response {
     margin: 30px 0px;
 }
