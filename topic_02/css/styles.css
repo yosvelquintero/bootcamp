@@ -1,17 +1,8 @@
 body {
-    margin: auto;
-    padding: 40px;
-    width: 80%;
-    color: #000000;
-}
-a {
-    color: #000000
+    font-size: 11px;
 }
 div#response {
     margin: 30px 0px;
-}
-input {
-    border: 1px solid black;
 }
 .red {
     border: 2px solid red;

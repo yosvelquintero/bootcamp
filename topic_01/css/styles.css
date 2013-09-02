@@ -3,6 +3,7 @@ body {
     padding: 40px;
     width: 80%;
     color: #000000;
+    font-size: 12px;
 }
 a {
     color: #000000
@@ -22,4 +23,12 @@ input {
 }
 div#tweets {
     margin-top: 15px;
+}
+
+footer {
+    font-size: 11px;
+}
+footer p {
+    padding: 0px;
+    margin: 0px;
 }

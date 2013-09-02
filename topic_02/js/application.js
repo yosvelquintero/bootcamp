@@ -1,10 +1,10 @@
 $(document).ready(function() {
     var $alias          = $('textarea#alias'),
-        $button         = $('button#button'),
+        $button         = $('a#button'),
         $submitTwitter  = $('button#submitTwitter');
 
     // alert on document ready
-    alert('jQuery set: document ready occurred!');
+    // alert('jQuery set: document ready occurred!');
 
     // focus $alias
     $alias.focus();
