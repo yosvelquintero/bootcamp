@@ -50,10 +50,10 @@ function Movie() {
     };
 
     /**
-     * validate validate if title is defined
+     * isValidTitle
      * @return boolean true/false
      */
-    this.validate = function () {
+    this.isValidTitle = function () {
         return typeof this.title != 'undefined';
     }
 
@@ -63,7 +63,7 @@ function Movie() {
      * @return string     [description]
      */
     this.output = function (str) {
-        if (this.validate()) {
+        if (this.isValidTitle()) {
             return console.log(str);
         }
 
