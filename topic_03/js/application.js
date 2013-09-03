@@ -54,7 +54,7 @@ function Movie() {
      * @return boolean true/false
      */
     this.validate = function () {
-        return (typeof this.getTitle() != 'undefined') ? true : false;
+        return typeof this.title != 'undefined';
     }
 
     /**
