@@ -30,7 +30,7 @@ function Movie() {
             return this.setTitle(str);
         }
 
-        return this.output('Incorrect argument title!!');
+        return console.log('Incorrect argument title!!');
     }
 
     /**
