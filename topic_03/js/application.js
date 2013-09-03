@@ -63,10 +63,10 @@ function Movie() {
      * @return string     [description]
      */
     this.output = function (str) {
-        if (this.validated) {
-            return console.log('Movie title is undefined!!')
+        if (this.validate()) {
+            return console.log(str);
         }
 
-        return console.log(str);
+        return console.log('Movie title is undefined!!')
     }
 }
