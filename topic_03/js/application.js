@@ -1,7 +1,7 @@
 /**
- * Movie object
+ * Movie class
  */
-function Movie() {
+var Movie = function Movie() {
     var title;
 
     /**
@@ -30,7 +30,7 @@ function Movie() {
             return this.setTitle(str);
         }
 
-        return console.log('Incorrect argument title!!');
+        return console.log('First argument "title" is incorrect!!');
     }
 
     /**
@@ -38,7 +38,7 @@ function Movie() {
      * @return string message info
      */
     this.play = function () {
-        return this.output('Playing ' + this.getTitle() + '...');
+        return this.output('playing "'  + this.getTitle() + '"...');
     };
 
     /**
@@ -46,7 +46,7 @@ function Movie() {
      * @return string message info
      */
     this.stop = function () {
-        return this.output('Stoped ' + this.getTitle() + '!!');        
+        return this.output('stopped');        
     };
 
     /**
@@ -70,3 +70,11 @@ function Movie() {
         return console.log('Movie title is undefined!!')
     }
 }
+
+/**
+ * download method, that extends Movie class
+ * @return void [description]
+ */
+Movie.prototype.download = function() {
+    return this.output('This is the method "download" that extends from Movie.');
+};
