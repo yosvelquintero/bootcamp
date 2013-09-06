@@ -71,6 +71,7 @@ var Movie = function Movie() {
     }
 };
 
+
 /**
  * download method, that extends Movie class
  * @return void [description]
@@ -80,16 +81,28 @@ Movie.prototype.download = function() {
 };
 
 
+//---------------------------------------------------------------------------------------------------------
+
 
 /**
  * asSocial: 9. Create a mixin object called Social with the methods: share(friendName) and like().
  * @return Social Object
  */
 var asSocial = function() {
+
+    /**
+     * share
+     * @param  string friendName
+     * @return string
+     */
     this.share = function(friendName) {
         return this.like()  + this.friendName + '!!';
     };
 
+    /**
+     * like
+     * @return string
+     */
     this.like = function() {
         return 'I like this ';
     }
@@ -101,7 +114,14 @@ var Social = function(friendName) {
     this.friendName = friendName;
 };
 
-// asSocial.call(Social.prototype);
+asSocial.call(Social.prototype);
 
-// var social1 = new Social('Cuco');
-// social1.share(); // I like this Cuco!!
+var social1 = new Social('Cuco');
+social1.share(); // I like this Cuco!!
+
+
+//---------------------------------------------------------------------------------------------------------
+
+var Actor = function Actor() {
+    var actors = [];
+}
