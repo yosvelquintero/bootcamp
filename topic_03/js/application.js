@@ -67,9 +67,9 @@ var Movie = function Movie() {
             return console.log(str);
         }
 
-        return console.log('Movie title is undefined!!')
+        return console.log('Movie title is undefined!!');
     }
-}
+};
 
 /**
  * download method, that extends Movie class
@@ -78,3 +78,30 @@ var Movie = function Movie() {
 Movie.prototype.download = function() {
     return this.output('This is the method "download" that extends from Movie.');
 };
+
+
+
+/**
+ * asSocial: 9. Create a mixin object called Social with the methods: share(friendName) and like().
+ * @return Social Object
+ */
+var asSocial = function() {
+    this.share = function(friendName) {
+        return this.like()  + this.friendName + '!!';
+    };
+
+    this.like = function() {
+        return 'I like this ';
+    }
+
+    return this;
+};
+
+var Social = function(friendName) {
+    this.friendName = friendName;
+};
+
+// asSocial.call(Social.prototype);
+
+// var social1 = new Social('Cuco');
+// social1.share(); // I like this Cuco!!
