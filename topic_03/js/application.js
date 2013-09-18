@@ -2,7 +2,8 @@
  * Movie class
  */
 var Movie = function Movie() {
-    var title;
+    var title,
+        actors = [];
 
     /**
      * setTitle
@@ -96,7 +97,7 @@ var asSocial = function() {
      * @return string
      */
     this.share = function(friendName) {
-        return this.like()  + this.friendName + '!!';
+        return this.like() + this.title + ' with '  + friendName + '!!';
     };
 
     /**
@@ -104,7 +105,7 @@ var asSocial = function() {
      * @return string
      */
     this.like = function() {
-        return 'I like this ';
+        return 'Sharing ';
     }
 
     return this;
@@ -115,13 +116,19 @@ var Social = function(friendName) {
 };
 
 asSocial.call(Social.prototype);
+asSocial.call(Movie.prototype);
 
-var social1 = new Social('Cuco');
-social1.share(); // I like this Cuco!!
+// var social1 = new Social('Cuco');
+// social1.share(); // I like this Cuco!!
 
 
 //---------------------------------------------------------------------------------------------------------
 
 var Actor = function Actor() {
-    var actors = [];
+
+    this.addActor = function (name) {
+        this.actors.push(name);
+    }
 }
+
+Actor.call(Movie.prototype);
